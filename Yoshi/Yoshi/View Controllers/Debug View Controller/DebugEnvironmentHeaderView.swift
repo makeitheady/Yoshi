@@ -13,19 +13,19 @@ class DebugEnvironmentHeaderView: UIView {
         static let forceRestartKey = "forceRestartKey"
     }
     
-    @IBOutlet weak var iconImageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
     
     func setup() {
         UserDefaults.standard.setValue(true, forKey: Constant.forceRestartKey)
-        iconImageView.image = UIImage(named: "checkbox_selected.pdf")
+        titleLabel.text = "✅ Force Kill"
     }
     
     @IBAction func didTapForceRestart(_ sender: Any) {
         if UserDefaults.standard.bool(forKey: Constant.forceRestartKey) {
-            iconImageView.image = UIImage(named: "checkbox_unselected.pdf")
+            titleLabel.text = "❌ Force Kill"
             UserDefaults.standard.setValue(false, forKey: Constant.forceRestartKey)
         } else {
-            iconImageView.image = UIImage(named: "checkbox_selected.pdf")
+            titleLabel.text = "✅ Force Kill"
             UserDefaults.standard.setValue(true, forKey: Constant.forceRestartKey)
         }
     }
