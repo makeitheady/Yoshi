@@ -25,6 +25,10 @@
 		32AA07571E60D5C3001516EA /* YoshiReusableCellDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AA07561E60D5C3001516EA /* YoshiReusableCellDataSource.swift */; };
 		32CF66011F7C007E001A712A /* YoshiPersistentEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CF66001F7C007E001A712A /* YoshiPersistentEnvironment.swift */; };
 		664E30761DBEA72700C313C2 /* YoshiInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664E30751DBEA72700C313C2 /* YoshiInvocation.swift */; };
+		7B5C04FA264C088400876440 /* DebugEnvironmentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B5C04F7264C088400876440 /* DebugEnvironmentHeaderView.xib */; };
+		7B5C04FC264C088400876440 /* DebugEnvironmentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5C04F9264C088400876440 /* DebugEnvironmentHeaderView.swift */; };
+		7B5C0502264C08C500876440 /* checkbox_unselected.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7B5C0501264C08C500876440 /* checkbox_unselected.pdf */; };
+		7B5C0506264C08D700876440 /* checkbox_selected.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7B5C0505264C08D700876440 /* checkbox_selected.pdf */; };
 		94A8BC891F08029300022AE1 /* AppBundleUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8BC851F08029300022AE1 /* AppBundleUtility.swift */; };
 		94A8BC8A1F08029300022AE1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8BC861F08029300022AE1 /* Color.swift */; };
 		94A8BC901F0802A200022AE1 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A8BC8E1F0802A200022AE1 /* UITableViewCellExtension.swift */; };
@@ -72,6 +76,10 @@
 		32AA07561E60D5C3001516EA /* YoshiReusableCellDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshiReusableCellDataSource.swift; sourceTree = "<group>"; };
 		32CF66001F7C007E001A712A /* YoshiPersistentEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoshiPersistentEnvironment.swift; sourceTree = "<group>"; };
 		664E30751DBEA72700C313C2 /* YoshiInvocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshiInvocation.swift; sourceTree = "<group>"; };
+		7B5C04F7264C088400876440 /* DebugEnvironmentHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DebugEnvironmentHeaderView.xib; sourceTree = "<group>"; };
+		7B5C04F9264C088400876440 /* DebugEnvironmentHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugEnvironmentHeaderView.swift; sourceTree = "<group>"; };
+		7B5C0501264C08C500876440 /* checkbox_unselected.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = checkbox_unselected.pdf; sourceTree = "<group>"; };
+		7B5C0505264C08D700876440 /* checkbox_selected.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = checkbox_selected.pdf; sourceTree = "<group>"; };
 		94A8BC851F08029300022AE1 /* AppBundleUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppBundleUtility.swift; sourceTree = "<group>"; };
 		94A8BC861F08029300022AE1 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		94A8BC8E1F0802A200022AE1 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
@@ -285,6 +293,10 @@
 		F902ED4C1C6A3B2D007975F5 /* Debug View Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7B5C0501264C08C500876440 /* checkbox_unselected.pdf */,
+				7B5C0505264C08D700876440 /* checkbox_selected.pdf */,
+				7B5C04F9264C088400876440 /* DebugEnvironmentHeaderView.swift */,
+				7B5C04F7264C088400876440 /* DebugEnvironmentHeaderView.xib */,
 				F902ED4D1C6A3B2D007975F5 /* DebugViewController.swift */,
 			);
 			name = "Debug View Controller";
@@ -385,7 +397,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5C0506264C08D700876440 /* checkbox_selected.pdf in Resources */,
 				2746E6511C2C7AC3006C1DEF /* DebugDatePickerViewController.xib in Resources */,
+				7B5C0502264C08C500876440 /* checkbox_unselected.pdf in Resources */,
+				7B5C04FA264C088400876440 /* DebugEnvironmentHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +422,7 @@
 				94E2C9D51F09544100811CE9 /* YoshiSubmenu.swift in Sources */,
 				32AA07501E60D38B001516EA /* YoshiTableViewMenuItem.swift in Sources */,
 				F902ED331C694529007975F5 /* YoshiConfigurationManager.swift in Sources */,
+				7B5C04FC264C088400876440 /* DebugEnvironmentHeaderView.swift in Sources */,
 				F902ED4E1C6A3B2D007975F5 /* DebugViewController.swift in Sources */,
 				94A8BC911F0802A200022AE1 /* UIWindowExtension.swift in Sources */,
 				32958CC41F55DCFC009F8543 /* YoshiEnvironmentMenu.swift in Sources */,

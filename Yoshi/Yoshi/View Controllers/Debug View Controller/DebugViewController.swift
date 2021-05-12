@@ -68,6 +68,16 @@ internal final class DebugViewController: UIViewController {
 
         if isRootYoshiMenu {
             tableView.tableHeaderView = tableViewHeader()
+        } else {
+            let view = UINib(nibName: "DebugEnvironmentHeaderView",
+                             bundle: Bundle(for: DebugViewController.self))
+                .instantiate(withOwner: nil,
+                             options: nil)[0] as! DebugEnvironmentHeaderView
+            let headerView = UIView(frame: CGRect(x: 0, y: 0,
+                                                  width: view.bounds.width, height: 40))
+            headerView.addSubview(view)
+            view.setup()
+            tableView.tableHeaderView = headerView
         }
 
         registerCellClasses(options: options)
