@@ -53,7 +53,12 @@ internal final class YoshiConfigurationManager {
             return
         }
 
-        let window = UIWindow(frame: UIScreen.main.bounds)
+        var window = UIWindow(frame: UIScreen.main.bounds)
+        if #available(iOS 13.0, *) {
+            if let newWindow = UIWindowScene.focused.map(UIWindow.init(windowScene:)) {
+                window = newWindow
+            }
+        }
         window.windowLevel = UIWindow.Level.normal
 
         // Use a dummy view controller with clear background.

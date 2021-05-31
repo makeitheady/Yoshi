@@ -37,6 +37,7 @@
 		94E2C9D51F09544100811CE9 /* YoshiSubmenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E2C9D11F09544100811CE9 /* YoshiSubmenu.swift */; };
 		94E2C9D81F0954C900811CE9 /* YoshiSingleSelectionMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E2C9D71F0954C900811CE9 /* YoshiSingleSelectionMenu.swift */; };
 		94E2C9DA1F095A8C00811CE9 /* YoshiSingleSelectionMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E2C9D91F095A8C00811CE9 /* YoshiSingleSelectionMenuItem.swift */; };
+		F4C860252665399A00D51533 /* UIWindowSceneExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C860242665399A00D51533 /* UIWindowSceneExtension.swift */; };
 		F902ED331C694529007975F5 /* YoshiConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902ED2D1C694529007975F5 /* YoshiConfigurationManager.swift */; };
 		F902ED4E1C6A3B2D007975F5 /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902ED4D1C6A3B2D007975F5 /* DebugViewController.swift */; };
 		F902ED541C6A831A007975F5 /* YoshiActionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902ED531C6A831A007975F5 /* YoshiActionResult.swift */; };
@@ -86,6 +87,7 @@
 		94E2C9D11F09544100811CE9 /* YoshiSubmenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshiSubmenu.swift; sourceTree = "<group>"; };
 		94E2C9D71F0954C900811CE9 /* YoshiSingleSelectionMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshiSingleSelectionMenu.swift; sourceTree = "<group>"; };
 		94E2C9D91F095A8C00811CE9 /* YoshiSingleSelectionMenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshiSingleSelectionMenuItem.swift; sourceTree = "<group>"; };
+		F4C860242665399A00D51533 /* UIWindowSceneExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowSceneExtension.swift; sourceTree = "<group>"; };
 		F902ED2D1C694529007975F5 /* YoshiConfigurationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshiConfigurationManager.swift; sourceTree = "<group>"; };
 		F902ED4D1C6A3B2D007975F5 /* DebugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
 		F902ED531C6A831A007975F5 /* YoshiActionResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshiActionResult.swift; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 			children = (
 				94A8BC8E1F0802A200022AE1 /* UITableViewCellExtension.swift */,
 				94A8BC8F1F0802A200022AE1 /* UIWindowExtension.swift */,
+				F4C860242665399A00D51533 /* UIWindowSceneExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				F902ED331C694529007975F5 /* YoshiConfigurationManager.swift in Sources */,
 				7B5C04FC264C088400876440 /* DebugEnvironmentHeaderView.swift in Sources */,
 				F902ED4E1C6A3B2D007975F5 /* DebugViewController.swift in Sources */,
+				F4C860252665399A00D51533 /* UIWindowSceneExtension.swift in Sources */,
 				94A8BC911F0802A200022AE1 /* UIWindowExtension.swift in Sources */,
 				32958CC41F55DCFC009F8543 /* YoshiEnvironmentMenu.swift in Sources */,
 				32AA07541E60D417001516EA /* YoshiDateSelectorMenu.swift in Sources */,
