@@ -64,13 +64,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     private func instabugMenu() -> YoshiMenu {
-        Instabug.start(withToken: "cf779d2e19c0affaad8567a7598e330d", invocationEvent: .none)
-        Instabug.setDefaultInvocationMode(.bugReporter)
-
         return YoshiActionMenu(title: "Start Instabug",
                                subtitle: nil,
                                completion: {
-            Instabug.invoke()
+#if DEBUG
+            Instabug.start(withToken: "cf779d2e19c0affaad8567a7598e330d", invocationEvents: [.shake, .screenshot])
+            BugReporting.show(with: .bug, options: [.commentFieldRequired])
+            BugReporting.enabledAttachmentTypes = [.screenShot, .screenRecording, .galleryImage]
+#endif
         })
     }
 
