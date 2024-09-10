@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Yoshi
 
 /// Menu used to present a list of environment options and interact with YoshiEnvironmentManager.
 public final class YoshiEnvironmentMenu<T: YoshiEnvironment & Codable>: YoshiSingleSelectionMenu {

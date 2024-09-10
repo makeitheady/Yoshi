@@ -5,11 +5,13 @@ import PackageDescription
 
 let package = Package(
     name: "Yoshi",
+    defaultLocalization: "en",
+    platforms: [.iOS(.v12)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "Yoshi",
-            targets: ["Yoshi"]),
+            targets: ["Yoshi", "QAKit"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -17,6 +19,8 @@ let package = Package(
         .target(
             name: "Yoshi"
         ),
+        .target(name: "QAKit",
+               dependencies: ["Yoshi"]),
         .testTarget(
             name: "YoshiTests",
             dependencies: ["Yoshi"]),
