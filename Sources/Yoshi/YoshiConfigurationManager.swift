@@ -6,7 +6,8 @@
 //  Copyright © 2015 Prolific Interactive. All rights reserved.
 //
 
-import UIKit
+import UIKit.UIWindow
+import Foundation
 
 /// The configuration manager for the debug menu.
 internal final class YoshiConfigurationManager {
