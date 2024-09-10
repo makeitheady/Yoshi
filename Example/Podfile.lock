@@ -9,7 +9,7 @@ DEPENDENCIES:
   - Yoshi/QAKit (from `../`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/CocoaPods/specs.git:
     - Instabug
 
 EXTERNAL SOURCES:
