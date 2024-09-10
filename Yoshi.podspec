@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
   # All subspecs must declare this as a dependency.
   s.subspec "Core" do |ss|
    ss.source_files = "Sources/Yoshi/**/*.{swift}"
-   ss.resources = 'Yoshi/**/*.{png,jpeg,jpg,storyboard,xib}'
+   ss.resources = 'Sources/Yoshi/**/*.{png,jpeg,jpg,storyboard,xib}'
   end
 
   s.default_subspec = "Core"
